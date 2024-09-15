@@ -9,7 +9,9 @@ public class Main {
         System.out.println(p.getGender());
         p.setAge(25);
         System.out.println(p.getAge());
-       Person p1=new Person("xyz","male");
-       p1.displayInfo();
+        Person p1=new Person("xyz",26);
+        p1.setGender("NA");
+        p1.displayInfo();
+
     }
 }

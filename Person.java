@@ -24,11 +24,10 @@ public class Person{
         this.name = name;
         this.gender = gender;
     }
-    Person(String name,String gender)
-    {
-        this.name=name;
-        this.gender=gender;
-    }
+   Person(String name,int age) {
+       this.name = name;
+       this.age = age;
+   }
     public int getAge(){
         return age;
     }
@@ -40,6 +39,9 @@ public class Person{
     }
 public void setAge(int age){
         this.age=age;
+}
+public void setGender(String gender){
+        this.gender=gender;
 }
     void displayInfo()
     {

@@ -1,6 +1,6 @@
 package Assingment10;
 
-public class Book {
+public class Book implements Readable{
     String title;
     String author;
     double price;
@@ -57,5 +57,15 @@ public class Book {
         System.out.println("price of the book is : "+price);
         System.out.println("publicationYear of the book is : "+publicationYear);
         System.out.println("after appling discount :"+finalprice);
+    }
+
+    @Override
+    public void read() {
+        System.out.println("Reading the book:  "+title);
+    }
+
+    @Override
+    public String getSummary() {
+        return title;
     }
 }
